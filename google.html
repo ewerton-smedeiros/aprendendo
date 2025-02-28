@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Homepage</title>
+
+    <style>
+        html, body{
+            font-family: sans-serif;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        /* INÍCIO HEADER*/
+
+        header{
+            width: 100vw;
+            height:10vh;
+            display: flex;
+            position: fixed;
+        }
+
+        #section1{
+            width: 90%;
+            height: 40px;
+            position: sticky;           
+        }
+
+        .menu-superior{
+            list-style-type: none;
+            display: flex;
+            margin-left: 85%;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .menu-superior-li{
+            margin-left: 15px;
+            color: #4b4949;
+        }
+
+        
+        #section2{
+            width: 10%;
+            height: 40px;
+            position: sticky;
+        }
+
+        .button-login{
+            width: 60%;
+            height: 40px;
+            border-radius: 22px;
+            background-color: rgb(77, 77, 199);
+            color: white;
+            margin-left: 20%;
+            margin-right: 30%;
+            margin-top: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #4b4949;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:visited{
+            color: #4b4949;
+        }
+
+        /* FIM HEADER*/
+
+        /* INICIO MAIN*/
+
+        main{
+            width: 100vw;
+            height: 70vh;
+            display: inline-block;
+            position: relative;
+            margin-top: 15%;
+            display: inline-block;
+        }
+
+        #logo{
+            
+            width: 100%;
+            height: 200px;
+            background:#fff url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png) no-repeat center;
+        }
+
+        #search{
+            width: 100%;
+            height: 60px;
+            padding-top: 5px;
+            display: block;
+            position: sticky;
+        }
+
+        form{
+            width: 50%;
+            height: 60px;
+            font-size: 30px;
+            border-width: 1px;
+            padding-left: 25%;
+            position: sticky;
+            display: block;
+                
+        }
+
+        input{
+            border-radius: 35px;
+            height: 80%;
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 4px -2px #989898;
+            -moz-box-shadow: 0 4px 4px -2px #989898;
+            -webkit-box-shadow: 0 4px 4px -2px #989898;
+
+        }
+
+        #section-btn-search{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .btn-search{
+            border-radius: 5px;
+            background-color: #f1efef;
+            color: #4b4949;
+            padding: 10px;
+            font-size: 13px;
+            margin-right: 10px;
+            border-style: none;
+        }
+
+        /* FIM MAIN */
+
+        footer{
+            height: 10vh;
+            background-color: #f1efef;
+            font-size: 13px;
+            display: inline-block;
+            color: #4b4949;
+            position: sticky;
+            bottom: 0;
+            width: 100vw;
+        }
+
+        #footer-01{
+            height: 45%;
+            display: flex;
+
+        }
+
+        #footer-p{
+            width: 100%;
+            margin-left:  10px;
+        }
+
+        .footer-ul{
+            display: flex;
+            padding-inline-start: 10px;
+        }
+
+        .footer-li{
+            margin-right: 20px;
+            list-style-type: none;
+        }
+
+        #footer-02{
+            display: flex;
+            height: 45%;
+        }
+
+        #footer-02-01{
+            width: 80%;
+            border-top: 1px solid #ccc;
+        }
+        #footer-02-02{
+            width: 20%;
+            border-top: 1px solid #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="section1">
+                <nav>
+                    <ul class="menu-superior">
+                        <li class="menu-superior-li"><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
+                        <li class="menu-superior-li"><a href="https://www.google.com/imghp?hl=pt-PT&ogbl">Imagens</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div id="section2">
+        <button class="button-login">Entrar</button>
+        </div>
+    </header>
+
+
+
+
+
+
+    <main>
+        <div id="logo">
+         </div>
+        <section id="search">
+            <form>
+                <input type="text" name="search" placeholder="">
+            </form>
+        </section>
+        <section id="section-btn-search">
+            <button class="btn-search">Pesquisa Google</button>
+            <button class="btn-search">Estou com sorte</button>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+
+        <section id="footer-01">
+            <p id="footer-p">Brasil</p>
+        </section>
+
+        <section id="footer-02">
+                <section id="footer-02-01">
+                    <nav>
+                        <ul class="footer-ul">
+                            <li class="footer-li">Sobre</li>
+                            <li class="footer-li">Publicidade</li>
+                            <li class="footer-li">Negócios</li>
+                            <li class="footer-li">Como funciona a pesquisa</li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section id="footer-02-02">
+                    <nav>
+                        <ul class="footer-ul">
+                            <li class="footer-li">Privacidade</li>
+                            <li class="footer-li">Termos</li>
+                            <li class="footer-li">Definições</li>
+                        </ul>
+                    </nav>
+                </section>
+        </section>
+
+    </footer>
+    
+</body>
+</html>
+
+
